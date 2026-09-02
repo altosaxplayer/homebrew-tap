@@ -9,10 +9,11 @@ class PingUinBeta < Formula
 
   def install
     system "cargo", "install", *std_cargo_args
+    mv bin/"ping-uin", bin/"ping-uin-beta"
   end
 
   test do
-    assert_path_exists bin/"ping-uin"
-    assert_predicate bin/"ping-uin", :executable?
+    assert_path_exists bin/"ping-uin-beta"
+    assert_predicate bin/"ping-uin-beta", :executable?
   end
 end
