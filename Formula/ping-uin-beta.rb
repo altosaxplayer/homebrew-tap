@@ -2,7 +2,7 @@ class PingUinBeta < Formula
   desc "Btop-style TUI for monitoring IPs and hostnames (beta branch)"
   homepage "https://github.com/altosaxplayer/ping-uin"
   url "https://github.com/altosaxplayer/ping-uin/archive/refs/heads/beta.tar.gz"
-  version "0.1.10-beta"
+  version "0.1.11-beta"
   license "MIT"
 
   depends_on "rust" => :build
